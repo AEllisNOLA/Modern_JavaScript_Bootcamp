@@ -1,0 +1,41 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Notes App</title>
+    </head>
+
+    <body>
+        <h1>Notes App</h1>
+        <h2>A place to write your notes!</h2>
+
+        <input type='text' id='search-text' placeholder='Search Notes' />
+        <!-- 
+        all notes are placed in div so that div can be targeted and all its children can be deleted and recreated 
+        Values are added in notes-app.js
+        -->
+        <div id='notes-list'>
+
+        </div>
+        <button id='create-note'>Create Note</button>
+        <!-- <label><input id='checkbox'type='checkbox' />Check me out!</label> -->
+        <select id='filter-by'>
+            <option value='byEdited'>Last Edited</option>
+            <option value='byCreated'>Recently Created</option>
+            <option value='byAlphabetical'>Alphabetically</option>
+        </select>
+
+
+
+        <!-- 
+        <form id='name-form'>
+            <input type='text' id='#first-name' placeholder='First Name' name='firstName'/>
+            <button>Submit</button>
+        </form>
+    -->
+
+        <!-- <button id='remove-all'>Remove All Notes</button> -->
+        <script src="notes-app.js"></script>
+    </body>
+
+    </html>
