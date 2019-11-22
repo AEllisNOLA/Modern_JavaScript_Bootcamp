@@ -1,0 +1,29 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Notes App</title>
+    </head>
+
+    <body>
+        <h1>My Notes</h1>
+        <h2>A place to write your notes!</h2>
+
+        <input type='text' id='search-text' placeholder='Search Notes' />
+
+        <div id='notes-list'>
+        </div>
+        <button id='create-note'>Create Note</button>
+
+        <select id='filter-by'>
+            <option value='byEdited'>Last Edited</option>
+            <option value='byCreated'>Recently Created</option>
+            <option value='byAlphabetical'>Alphabetically</option>
+        </select>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js'></script>
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+        <script src="notes-functions.js"></script>
+        <script src="notes-app.js"></script>
+    </body>
+
+    </html>
